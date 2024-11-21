@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colombia360</title>
+    <link rel="stylesheet" href="pay_form.css" />
+  </head>
+  <body>
+    <div class="payment-container">
+      <h2>Formulario de Pago</h2>
+      <form action="shopping_page.html">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="first-name">Nombre</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Apellido</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="cel-number">Número de Celular</label>
+            <input type="tel" id="cel-number" name="cel-number" required />
+          </div>
+          <div class="form-group">
+            <label for="age">Edad</label>
+            <input type="number" id="age" name="age" min="18" required />
+          </div>
+          <div class="form-group full-width">
+            <label for="card-number">Número de Tarjeta</label>
+            <input type="text" id="card-number" name="card-number" required />
+          </div>
+          <div class="form-group">
+            <label for="csv">CSV</label>
+            <input type="text" id="csv" name="csv" maxlength="3" required />
+          </div>
+          <div class="form-group">
+            <label for="due-date">Fecha de Vencimiento</label>
+            <input
+              type="text"
+              id="due-date"
+              name="due-date"
+              placeholder="MM/AA"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="total-amount">
+          Monto Total a Pagar: <span>$291,480</span>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-confirm">Confirmar Pago</button>
+          <button
+            type="button"
+            class="btn btn-cancel"
+            onclick="window.location.href='shopping_page.html'"
+          >
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
